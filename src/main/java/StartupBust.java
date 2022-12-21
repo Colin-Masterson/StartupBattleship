@@ -8,14 +8,14 @@
  *
  * @author colin
  */
-public class SimpleStartupGame {
+public class StartupBust {
 
     public static void main(String[] args) {
         int numOfGuesses = 0;
 
         GameHelper helper = new GameHelper();
 
-        SimpleStartup theStartup = new SimpleStartup();
+        Startup theStartup = new Startup();
 
         int randomNum = (int) (Math.random() * 5);
 
