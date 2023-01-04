@@ -13,10 +13,14 @@ import java.util.ArrayList;
 public class Startup {
 
     private ArrayList<String> locationCells;
-    private int numOfHits = 0;
+    private String name;
 
-    public void setLocationCells(ArrayList<String> locs) {
-        locationCells = locs;
+    public void setLocationCells(ArrayList<String> loc) {
+        locationCells = loc;
+    }
+
+    public void setName(String n) {
+        name = n;
     }
 
     public String checkYourself(String userInput) {
@@ -30,13 +34,13 @@ public class Startup {
 
             if (locationCells.isEmpty()) {
                 result = "kill";
+                System.out.println("Ouch you sunk " + name + " : ( ");
             } else {
                 result = "hit";
             }
 
         }
 
-        System.out.println(result);
         return result;
     }
 }
